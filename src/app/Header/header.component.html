@@ -3,8 +3,8 @@
         <a href="#" class="navbar-brand">Recipio</a><i class="fa fa-cutlery" aria-hidden="true"></i>
 
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">Recipes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Shopping List</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('recipe',$event)">Recipes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('shopping-list',$event)">Shopping List</a></li>
             </ul>
             <!-- <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">Save</a></li>
