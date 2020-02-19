@@ -27,7 +27,9 @@
             <div class="row">
                 <div class="col-xs-12">
                     <button class="btn btn-success" style="cursor: pointer;" type="submit" [disabled]="!shoppingForm.valid">{{ editMode ? 'Update' : 'Add'}}</button>
+                    &nbsp;&nbsp;
                     <button class="btn btn-danger" type="button" *ngIf="editMode" (click)="onDelete()">Delete</button>
+                    &nbsp;&nbsp;
                     <button class="btn btn-primary" type="button"(click)="onClear()">Clear</button>
                 </div>
             </div>
