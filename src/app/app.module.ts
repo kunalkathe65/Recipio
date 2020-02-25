@@ -17,6 +17,7 @@ import { ShoppingListService } from './Shopping-list/shopping-list.service';
 import { RecipeEditComponent } from './Recipes/recipe-edit/recipe-edit.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
+import { RecipeService } from './Recipes/recipe.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     NgbModule
   ],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService,RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
